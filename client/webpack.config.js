@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: JATE,
+        title: "JATE",
       }),
       // injects our custom service work from src-sw.js
       new InjectManifest({
@@ -60,7 +60,7 @@ module.exports = () => {
           use: {
             loader: 'babel-loader',
             options: {
-              presents: ['@babel/preset-env'],
+              presets: ['@babel/preset-env'],
               plugins: [
                 "@babel/plugin-proposal-object-rest-spread",
                 "@babel/transform-runtime",
